@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+/* :root{
+  --gray:#cec2c2;
+} */
+body{
+  background-color: #262626;
+  overflow-x: hidden;
+  padding-left: 25rem;
+}
+section{
+  min-height: 100vh;
+  padding: 1rem;
+
+}
+*{
+  /* background-color: gray; */
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  outline: none;
+  border: none;
+}
+html{
+  font-size: 90%;
+  overflow-x: hidden;
+}
+
+*::selection{
+  background: rgb(240, 235, 235);
+  color: rgb(14, 13, 13);
+}
+html::-webkit-scrollbar{
+  width: 1.2rem;
+}
+html::-webkit-scrollbar-track{
+  background: #cec2c2;
+}
+html::-webkit-scrollbar-thumb{
+ background: rgb(80, 71, 71);
+ border-radius: 15px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 100%;
+  width: 30rem;
+  background: #333131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  box-shadow: 4px 6px rgb(58, 55, 55);
+}
+header .Profile img{
+  height: 12rem;
+  width: 12rem;
+  margin-top: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: .4rem solid #cec2c2;
+  /* box-shadow: 4px 4px 6px 6px rgb(95, 91, 91); */
+}
+header .Profile .Profile_Name {
+  font-size: 2.0rem;
+  color: aliceblue;
+  text-shadow: 2px 2px 4px #e6e1e1;
+}
+header .Profile .Profile_desc {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  color: aliceblue;
+}
+
+header .Portfolio_navbar {
+  width: 85%;
+}
+header .Portfolio_navbar ul {
+  list-style: none;
+  padding: 0.6rem 4rem;
+}
+header .Portfolio_navbar ul li a{
+  display: block;
+  padding: 0.7rem;
+  margin: 1.0rem 0;
+  background: gray;
+  color: rgb(233, 229, 229);
+  font-size: 1.2rem;
+  border-radius: 5rem;
+  box-shadow: 2px 3px rgb(95, 91, 91);
+}
+header .Portfolio_navbar ul li a:hover{
+  background-color: rgb(32, 32, 32);
+  color: white;
+  box-shadow: 1px 1px wheat;
+}
+
+/* Media */
+#menu{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: #262626;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem 1.2rem; 
+  z-index: 1000;
+  display: none;
+}
+#menu:hover{
+  background-color: #cec2c2;
+  border-radius: 50%;
+}
+
+
+.Home{
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0  8rem;
+}
+.Home h3{
+  font-size: 2rem;
+  color: #cec2c2;
+}
+.Home h1{
+  font-size: 3.5rem;
+  color: #cec2c2;
+}
+.Home span{
+  color: white;
+  text-shadow: 4px 4px 8px #c0bebe;
+}
+.Home p{
+  font-size: 1.5rem;
+  color: rgb(208, 221, 221) ;
+  padding: 1rem 0;
+}
+.Home .Btn{
+  padding: .7rem 3rem;
+  background: gray;
+  color: #cec2c2;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  /* border: 2px solid black; */
+  border-radius: 5rem;
+  box-shadow: 3px 5px rgb(95, 91, 91);
+}
+.Btn:hover{
+  background-color: #262626;
+  box-shadow: 1px 2px wheat;
+}
+.Home .Btn2{
+  padding: .7rem 3rem;
+  background: gray;
+  color: #cec2c2;
+  cursor: pointer;
+  margin-top: 1rem;
+  /* margin-bottom: 1rem; */
+  margin-left: 3rem;
+  font-size: 1.6rem;
+  /* border: 1px solid gray; */
+  border-radius: 5rem;
+  box-shadow: 3px 5px rgb(95, 91, 91);
+}
+.Btn2:hover{
+  background-color: #262626;
+  box-shadow: 1px 2px wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries  ---> */ 
+@media (max-width :1200px){
+  html{
+    font-size: 90%;
+    overflow-x: hidden;
+  }
+  .Home{
+    padding: 1rem 8rem;
+    
+  }
+  .Home div .Btn{
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+  }
+  .Home div .Btn2{
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width :950px){
+  header{
+    left: -120%;
+  }
+  #menu {
+    display: block;
+  }
+  header.toggle{
+    left: 0%;
+  }
+  body{
+    padding: 0;
+  }
+  .Home{
+    padding: 3rem;
+  }
+}
+@media (max-width :750px){
+  html{
+    /* font-size: 50%; */
+    font-size: 80%;
+  }
+
+}
+@media (max-width :450px){
+  header{
+    width: 100vw;
+  }
+  html{
+    font-size: 65%;
+  }
+  .Home div .Btn{
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+  }
+  .Home div .Btn2{
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width :300px){
+  .Home div .Btn{
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    font-size: 1rem;
+  }
+  .Home div .Btn2{
+    align-items: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+}

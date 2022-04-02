@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Sort.css">
+    <link rel="stylesheet" href="css/Mobile.css">
+    <script src="https://kit.fontawesome.com/8d688aa403.js" crossorigin="anonymous"></script>
+    <title>Blogging Site</title>
+</head>
+<body>
+
+    <nav id="navigation">
+        <div id="left">
+        <a href="/">
+            <span id="logo"> <img src="img/Sharu pic.jpg" style="width: 40px; border-radius: 35%; align-items: center; padding: 5px;" alt="Logo"> </span> 
+            <div id="logo_name"> INFOKIT </div>
+        </a>
+        </div>
+
+        <div id="right">
+            <ul>
+                <li> <a href="/About.html">About</a></li>
+                <li> <a href="/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="search">
+            <form action="/Search.html">
+              <input id="input" type="search" placeholder="Search.." name="Search" > 
+              <button type="submit" ><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+       
+    </nav>
+    <div id="hr"> <hr> </div>
+
+    <!-- Mobile View -->
+    <style>
+        @media screen and (max-width : 1250px) {
+            #navigation{
+                /* width: 100%; */
+                
+                flex-direction: column;
+                margin: auto;
+                width: fit-content;
+            }
+        }
+    </style>
+    <!-- <ul>
+        <li><a class="active" href="/">Blogs</a></li>
+        <li><a href="/">Vidoes</a></li>
+        <li><a href="/">Business</a></li>
+    </ul> -->
+
+    <div id="content"> 
+        <div id="con">
+            <h1 id="conhead">INFOKIT INTRO</h1>
+            <div class="maincon">Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.One of the most widely used programming languages, Java is used as the server-side language for most back-end development projects, including those involving big data and Android development.The Java™ Programming Language is a general-purpose, concurrent, strongly typed, class-based object-oriented language. It is normally compiled to the bytecode instruction set and binary format defined in the Java Virtual Machine Specification. Java is also commonly used for desktop computing, other mobile computing, games, and numerical computing.Java is quite easy to learn and can be understood in a short span of time as it has a syntax similar to English. You can also learn from GeeksforGeeks Java Tutorials. This will guide you on how to get started with Java and make yourself proficient in it.Key differences between Java and JavaScript: Java is an OOP programming language while Java Script is an OOP scripting language. Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only. Java code needs to be compiled while JavaScript code are all in text.</div>
+        </div>
+        
+        <!-- <img id="con_img" src="img/homepage.jpg" alt="Image"> -->
+    </div>
+
+    <div id="HR"> <hr> </div>
+    <div id="Articles">
+        
+        <h2 id="art_head">Featured Articles</h2>
+
+        <div class="dropdown">
+            
+            <i id="sort" class="fas fa-sort-amount-up"></i></i><span onclick="myFunction()" class="dropbtn">SORT BY</span>
+                
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">Most Popular</a>
+              <a href="#contact">Alphabatically(A-Z)</a>
+              <a href="#about">Date Added(Newest)</a>
+              <a href="#about">Date Added(Oldest)</a>
+            </div>
+        </div>
+          
+        
+
+    <div id="article">
+        <a href="/Blogpost1.html">
+        <img id="art_img" src="Img/article_1.jpg" alt="Article">
+
+        <div id="art1">
+            <h2>My First Article in my first Website </h2>
+            <span>Description : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam <br></span>
+            <span>Author Name : Sharu  | </span>
+            <span>Published : 16 December (12 min to read)</span>
+            </a>
+        </div>
+    </div>
+    <div id="art1_hr"> <hr> </div>
+
+    <div id="article2">
+        <a href="/Blogpost2.html">
+        <img id="art_img2" src="Img/article_2.jpg" alt="Article">
+
+        <div id="art2">
+            <h2>Second Article in my first Website </h2>
+            <span>Description : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam <br></span>
+            <span>Author Name : Mohd  | </span>
+            <span>Published : 16 January (8 min to read)</span>
+        </a>
+        </div>
+    </div>
+    <div id="art2_hr"> <hr> </div>
+
+    <div id="article3">
+        <a href="/">
+        <img id="art_img3" src="Img/article_3.jpg" alt="Article">     
+
+        <div id="art3">
+            <h2>My Another Article in my first Website </h2>
+            <span>Description : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam <br></span>
+            <span>Author Name : Sharu  | </span>
+            <span>Published : 12 December (19 min to read)</span>
+        </a>
+        </div>
+    </div>
+    <div id="art3_hr"> <hr> </div>
+
+    <div id="article4">
+        <a href="/">
+        <img id="art_img4" src="Img/article_4.jpg" alt="Article">     
+
+        <div id="art4">
+            <h2>Another Article in my first Website </h2>
+            <span>Description : Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam <br></span>
+            <span>Author Name : Mohd   | </span>
+            <span>Published : 16 July (9 min to read)</span>
+        </a>
+        </div>
+    </div>
+    <div id="art4_hr"> <hr> </div>
+    </div>
+
+    <div id="footer"> 
+        <div id="foot_con"> Follow Me On  :  </div>
+        <a href=""><img id="Twitter_icon" src="/Img/Twitter_icon.png" alt="icon"></a>
+        <a href=""><img id="linkedin_icon" src="/Img/linkedin_icon.png" alt="icon"></a>
+        <a href=""><img id="Facebook_icon" src="/Img/Facebook_icon.png" alt="icon"></a>
+        <a href="https://www.instagram.com/mdshariquek16/"><img id="insta_icon" src="/Img/Instagram_icon.png" alt="icon"></a>
+        <!-- <a href=""><img id="Mail_icon" src="/Img/mail_icon.png" alt="icon"></a> --> 
+        
+        <div id="foot2">
+            Copyright &copy; :  xxxxxx
+        </div>
+    </div>
+
+    <script src="/JS/Sort.js"></script>
+    <script src="/JS/index.js"></script> 
+    
+
+</body>
+</html>
