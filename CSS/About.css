@@ -548,9 +548,9 @@ footer h2 {
     .MyName {
       font-size: 16px;
     }
-    .My_Intro{
+/*     .My_Intro{
       display: none;
-    }
+    } */
     .About_Main_1{
       column-count: 2;
       width: 45rem;
@@ -620,12 +620,14 @@ footer h2 {
   .About_Main_1{
     padding-top: 0%;
     column-count: 1;
-    width: 28rem;
+    width: 30rem;
+    font-size: 14px;
     margin: auto;
     box-shadow: 6px 6px 8px rgb(247, 230, 198);
   }
   .logo {
-    display: none;
+    margin-left: 23px;
+    width: 40px;
   }
   .MyName {
     font-size: 19px;
